@@ -1,38 +1,37 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: url('/public/glowing-shiny-musical-notes-background-design_1017-32856.avif');
+  background-size: cover; /* This will make sure the image covers the entire element */
+  background-position: center; /* This will center the image */
+  width: 100%; /* Set the width of the background image */
+  height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+#display{
+  background-color: brown;
+  text-size-adjust: 20px;
+  color: #000;
+  margin-bottom: 5px;
+  border-radius: 8px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#drum-machine{
+  margin-top: 33vh;
+}
+.drum-pads{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  
+}
+.drum-pad{
+  border: 1px solid brown;
+ size: 20px;
+  width: 100px; 
+  color: brown;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
 }
